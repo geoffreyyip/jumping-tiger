@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Build sandbox to try configuring React from scratch!",
   "main": "index.js",
+  "repo": {
+    "type": "git",
+    "url": "git://github.com/geoffreyyip/jumping-tiger.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib"
