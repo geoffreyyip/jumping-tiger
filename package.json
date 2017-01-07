@@ -4,7 +4,8 @@
   "description": "Build sandbox to try configuring React from scratch!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "author": "Geoffrey Yip",
   "license": "ISC",
