@@ -6,3 +6,6 @@ output
 
 # compare against
 create-react-app
+
+# misc
+npm-debug.log
