@@ -27,6 +27,7 @@ var config = {
   module: {
     rules: [
       { test: /\.(js|jsx)$/, use: 'babel-loader' },
+      { test: /\.(js|jsx)$/, use: 'eslint-loader', enforce: 'pre' },
     ]
   }
 };
