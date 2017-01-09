@@ -9,7 +9,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+
+    "_comment": "if webpack.config.js exists in current working directory, webpack will use that as its config file",
+    "build": "webpack",
+
+    "_comment2": "webpack-dev-server requires an index.html file within its build directory; --content-base means go here for rendering",
+    "start": "webpack-dev-server --content-base output"
   },
   "author": "Geoffrey Yip",
   "license": "ISC",
