@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /**
  * __dirname is current file directory
@@ -37,6 +38,7 @@ const config = {
       { test: /\.(js|jsx)$/, use: 'eslint-loader', enforce: 'pre' },
     ],
   },
+  plugin: [new HtmlWebpackPlugin],
 };
 
 module.exports = config;

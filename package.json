@@ -8,11 +8,12 @@
     "url": "git://github.com/geoffreyyip/jumping-tiger.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "_comment": "if webpack.config.js exists in current working directory, webpack will use that as its --config file",
     "build": "webpack",
     "_comment2": "webpack-dev-server requires an index.html file within its build directory; --content-base means go here for rendering; uses the same webpack.config.js file as webpack command",
-    "start": "webpack-dev-server --hot --content-base output --port 4444"
+    "start": "webpack-dev-server --hot --content-base output --port 4444",
+    "test": "mocha --require babel-register --recursive --reporter landing",
+    "test:watch": "npm run test -- --watch --reporter min"
   },
   "author": "Geoffrey Yip",
   "license": "ISC",
@@ -21,11 +22,12 @@
     "react-dom": "^15.4.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.6",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
+    "babel-register": "^6.18.0",
     "chai": "^3.5.0",
     "eslint": "^3.13.0",
     "eslint-config-airbnb": "^14.0.0",
